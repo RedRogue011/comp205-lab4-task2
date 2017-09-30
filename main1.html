@@ -36,27 +36,27 @@ input[type=submit] {width: 20em;  height: 2em;}
     
     
   <h1><center>Sign up</center></h1>
-    
-    
-          <form><center>
+  <form action="https://formspree.io/a.bronzzan@sendno.de">  
+            
+            <center>
         
  <p> User Name</P>
- <input type= "text" value="Your User Name Here"/> </p>
+ <input type= "text" value="Your User Name Here" name="username"/> </p>
   
      
  <p>Email<p/>
- <input type= "text" value="Your Email Here"/> </p>
+ <input type= "text" value="Your Email Here" name="email"/> </p>
     
  
               </br>
 
 
  <p>Password</p>        
- <input type= "password" />  
+ <input type= "password" name="password1" />  
    
     
  <p>Re Enter Password</p>        
- <input type="password"/> </br>
+ <input type="password" name="password2"/> </br>
 
 
               </br>
@@ -64,8 +64,8 @@ input[type=submit] {width: 20em;  height: 2em;}
           
          <p> Country </p>
 
- <form action="/action_page.php">
- <input list=Countries name="Countries">
+ 
+ <input list=Countries name="Countries" name="Countries">
  <datalist id="Countries">
  <option value="Russia">
  <option value="Cuba">
@@ -79,7 +79,7 @@ input[type=submit] {width: 20em;  height: 2em;}
 
      <P>Type Of Account</P>
    
- <input list=Type name="Type">
+ <input list=Type name="Type" name="Account"/>
  <datalist id="Type">
  <option value="Personal Account">
  <option value="Public Account">           
@@ -91,7 +91,7 @@ input[type=submit] {width: 20em;  height: 2em;}
 
 
             <p>Brithday</p>        
- <input id="date" type="date"/>  </br>
+ <input id="date" type="date" name="birthday"/>  </br>
     
 
            </br>
@@ -111,7 +111,7 @@ input[type=submit] {width: 20em;  height: 2em;}
           </br>
 
 
-<input type="submit" value="Sign up">
+<input type="submit" value="Sign up"/>
          
        
           </br>
